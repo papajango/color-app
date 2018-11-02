@@ -10,20 +10,22 @@ class AddColorForm extends Component {
 		_title.value = '';
 		_color.value = '#000';
 		_title.focus();
-	}
+	};
 
 	render() {
 		const { submit } = this;
 		return (
-			<form onSubmit={submit} className='add-color'>
-				<input ref='_title'
-					type='text'
-					placeholder='color title...' required />
-				<input ref='_color'
-					type='color' required />
+			<form onSubmit={submit} className="add-color">
+				<input
+					ref="_title"
+					type="text"
+					placeholder="color title..."
+					required
+				/>
+				<input ref="_color" type="color" required />
 				<button>ADD</button>
 			</form>
-		)
+		);
 	}
 }
 
